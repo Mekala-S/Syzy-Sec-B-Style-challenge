@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <style> /*Styling Started  */
+
+    /* Styling Navbar content */
+    .navbar-toggler {
+      margin-right: auto; 
+      margin-right: -8px; 
+      border: none;
+      background-color: transparent; 
+      border: none; 
+      padding: 0; 
+      width: 30px; 
+      height: 3px;  
+      margin-right: auto; 
+      margin-right: -8px; 
+      margin-top: 30px;
+    }
+    .navbar-toggler .line {
+      display: block;
+      background-color: rgb(22, 127, 247); 
+      height: 100%; 
+      transition: all 0.3s; 
+    }
+    .navbar-toggler .line + .line {
+      margin-top: 4px; 
+    }
+
+    .navbar, .nav-link{
+      align-content:center ;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 18px; 
+      padding-right:10px;
+        }
+
+    /* Company Name Editing */
+    .textcenter{
+      font-size: 25px;
+      font-family:'Times New Roman', Times, serif;
+      border: 1px solid gray;
+      box-sizing: border-box;
+     margin-right: 150px;
+     margin-left: 150px;
+      box-sizing: border-box;
+      
+    }
+    .text-center {
+    text-align: center;
+    
+    }
+    h1{
+      display: block;
+    }
+
+    /* Styling Account singin text  */
+    .signin{
+        text-align: left;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+    .mt-4 {
+     padding-top: 80px; 
+    }
+
+    .content{
+        text-align:center; 
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 30px;
+        font-weight: lighter;
+        justify-content: center;
+      
+    }
+
+    .form-control{
+   border-style:unset;
+   padding-left: 20px;
+    }
+
+/* Sign in button Editng */
+.btn-primary{
+  background-color:rgb(202, 233, 247) ;
+  border:none;
+  text-align: center;
+  align-content: center;
+  background-color:rgb(202, 233, 247) ;
+     color: black;
+    border: none; 
+    font-size:larger;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 1px;
+    align-items: center;
+    border-radius: 0px;
+    display: block;
+    margin: 0 auto;
+}
+.btn-primary:hover{
+    background-color:rgb(169, 221, 243) ;
+    color: black;
+}
+
+/* Responsive Sign in button */
+@media (max-width: 786px), 
+    {
+    .btn-primary {
+        width: 100%;   
+        padding: 20px;    
+                 }
+    }
+    
+    /*Styling finished  */
+
+  </style>
+</head>
+
+
+<body>
+    <div class="container">
+      <div class="row justify-content-center">
+        
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  
+  <div class="col-12 text-center">
+    <h1 class="textcenter">Syzy Technologies</h1>
+  
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Careers</a>
+      </li>
+    </ul>
+</div>
+  </div>
+</div>
+</nav>
+
+<div class="container mt-4">
+<p class="signin">ACCOUNT SIGN IN</p>
+
+<p class="content">Sign in to your account to access your profile, history, and private pages you've been granted access to. </p>
+<form>
+  <div class="form-group">
+    <input type="text" class="form-control" id="username" placeholder="Email"> <hr>
+   
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="password" placeholder="password"><hr>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">SIGN IN </button>
+  
+  </div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
